@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*,html{
+    background-color:rgb(148, 173, 248) ;
+    color:rgb(6, 6, 6);
+}
+.TodoWrapper{
+    width: 50%;
+    background-color: rgb(23, 5, 114);  
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom:50px;
+    justify-content:space-between;
+    align-items: center;
+   
+    
+}
+
+
+.Todo{
+    display:flex;
+    align-items: center;
+   justify-content: space-between;
+    cursor: pointer;
+    width: 70%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    margin: 8px;
+}
+.TodoForm{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-evenly;
+     
+}
+.todo-input{
+    width: 30vw;
+    border: 2px solid rgb(148, 173, 248);
+    background-color: rgb(23,5, 114);
+    color: white;
+}
+h1{
+    background-color: rgb(23, 5, 114);
+    font-size: 32px;
+    color: white;
+}
+.icon{
+    background-color: rgb(148, 173, 248)  ;
+    display: flex;
+    gap: 10px;
+    padding: 3px;
+}
+.todo-btn{
+    background-color: rgb(148, 173, 248) ;
+    color: rgb(9, 9, 9);
+    width: 5vw;
+    font-size: 13px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+}
+.editTodo-btn{
+    background-color: rgb(148, 173, 248)  ;
+    color: rgb(251, 249, 251);
+    font-size: 13px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+}
+.completed{
+    
+        text-decoration: line-through;
+        color: grey;      
+}
+@media screen and (max-width:700px){
+    body{font-size:12px;}
+  .TodoWrapper{
+    width:80%;
+  }
+  .TodoForm{
+    width: 70%;
+  }
+  .todo-btn{
+    font-size: 12px;
+    width: 30%;
+  }
+  .todo-input{
+    width: 70%;
+  }
+  }
